@@ -1,8 +1,19 @@
 public class Main {
     public static void main(String[] args) {
 
+        Empresa adidas = new Empresa("ADIDAS");
+        Clima sateliteClima = new Clima("Meteorologico",50000,20000,34000,"Este",80,90,20,15);
+        GPS sateliteGPS = new GPS(2000,5,7,"GPS",50000,20000,34000,"Norte",50,70,20,15);
+        TV sateliteTV = new TV(-50,10,100,"TV",50000,20000,34000,"Norte",50,70,20,15);
+        Comunicaciones sateliteComunicaciones = new Comunicaciones(50,100,40, "Comunicaciones",50000,20000,34000,"Norte",50,70,20,15);
+
+        adidas.agregarSatelite(sateliteClima);
+        adidas.agregarSatelite(sateliteGPS);
+        adidas.agregarSatelite(sateliteTV);
+        adidas.agregarSatelite(sateliteComunicaciones);
+
+
         System.out.println(" ");
-        SateliteClima sateliteClima = new SateliteClima("Meteorologico",50000,20000,34000,"Este",80,90,20,15);
         Ciudad medellin = new Ciudad("Medellin", 22,60,3);
         Ciudad cordoba = new Ciudad("Cordoba", 27,96,17);
 
@@ -17,19 +28,19 @@ public class Main {
 
 
         System.out.println(" ");
-        SateliteGPS sateliteGPS = new SateliteGPS(5,7,"GPS",50000,20000,34000,"Norte",50,70,20,15);
+        Receptor receptor = new Receptor(2010);
         String precisionGPS = sateliteGPS.obtenerPrecisionGPS();
+        String ubicacionReceptor = sateliteGPS.obtenerUbicacionGPS(receptor);
         System.out.println(precisionGPS);
+        System.out.println(ubicacionReceptor);
 
 
         System.out.println(" ");
-        SateliteTV sateliteTV = new SateliteTV(-50,10,100,"TV",50000,20000,34000,"Norte",50,70,20,15);
         String calidadTV = sateliteTV.obtenerCalidadTransmision();
         System.out.println(calidadTV);
 
 
         System.out.println(" ");
-        SateliteComunicaciones sateliteComunicaciones = new SateliteComunicaciones(50,100,40, "Comunicaciones",50000,20000,34000,"Norte",50,70,20,15);
         String comunicacion = sateliteComunicaciones.obtenerCalidadComunicaciones();
         System.out.println(comunicacion);
 

@@ -1,9 +1,9 @@
-public class SateliteTV extends Satelite{
+public class TV extends Satelite{
     private int senial;
     private int anchoBanda;
     private int latencia;
 
-    public SateliteTV(int potenciaSenial, int anchoBanda, int latencia, String tipo, int posicionOrbitalX, int posicionOrbitalY, int posicionOrbitalZ, String trayectoria, int vidaUtil, int estadoEnergia, int temperatura, int orientacion) {
+    public TV(int potenciaSenial, int anchoBanda, int latencia, String tipo, int posicionOrbitalX, int posicionOrbitalY, int posicionOrbitalZ, String trayectoria, int vidaUtil, int estadoEnergia, int temperatura, int orientacion) {
         super(tipo, posicionOrbitalX, posicionOrbitalY, posicionOrbitalZ, trayectoria, vidaUtil, estadoEnergia, temperatura, orientacion);
         this.senial = potenciaSenial;
         this.anchoBanda = anchoBanda;

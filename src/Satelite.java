@@ -1,9 +1,9 @@
 public class Satelite implements InterfazSatelite {
 
     private String tipo;
-    private int posicionOrbitalX;
-    private int posicionOrbitalY;
-    private int posicionOrbitalZ;
+    protected int posicionOrbitalX;
+    protected int posicionOrbitalY;
+    protected int posicionOrbitalZ;
     private String trayectoria;
     private int vidaUtil;
     protected int estadoEnergia;

@@ -1,10 +1,10 @@
 import java.util.ArrayList;
 
-public class SateliteClima extends Satelite {
+public class Clima extends Satelite {
 
     ArrayList<Ciudad> ciudades;
 
-    public SateliteClima(String tipo, int posicionOrbitalX, int posicionOrbitalY, int posicionOrbitalZ, String trayectoria, int vidaUtil, int estadoEnergia, int temperatura, int orientacion) {
+    public Clima(String tipo, int posicionOrbitalX, int posicionOrbitalY, int posicionOrbitalZ, String trayectoria, int vidaUtil, int estadoEnergia, int temperatura, int orientacion) {
         super(tipo, posicionOrbitalX, posicionOrbitalY, posicionOrbitalZ, trayectoria, vidaUtil, estadoEnergia, temperatura, orientacion);
         this.ciudades = new ArrayList<>();
     }

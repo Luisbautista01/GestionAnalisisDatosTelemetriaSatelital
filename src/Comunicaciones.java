@@ -1,9 +1,9 @@
-public class SateliteComunicaciones extends Satelite{
+public class Comunicaciones extends Satelite{
     private int potencia;
     private int frecuencia;
     private int relacionSenialRuido;
 
-    public SateliteComunicaciones(int potencia, int frecuencia, int relacionSenialRuido, String tipo, int posicionOrbitalX, int posicionOrbitalY, int posicionOrbitalZ, String trayectoria, int vidaUtil, int estadoEnergia, int temperatura, int orientacion) {
+    public Comunicaciones(int potencia, int frecuencia, int relacionSenialRuido, String tipo, int posicionOrbitalX, int posicionOrbitalY, int posicionOrbitalZ, String trayectoria, int vidaUtil, int estadoEnergia, int temperatura, int orientacion) {
         super(tipo, posicionOrbitalX, posicionOrbitalY, posicionOrbitalZ, trayectoria, vidaUtil, estadoEnergia, temperatura, orientacion);
         this.potencia = potencia;
         this.frecuencia = frecuencia;
